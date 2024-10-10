@@ -9,7 +9,7 @@ while True:
     n2 = input("Digite o segundo número: ")
     segundo_numero = int(n2)
 
-    escolha = input('Escolha a operação: \n[1] adição\n[2] subtração\n[3] multiplicação\n[4] divisão\n[5] sair\n Escolha: ')
+    escolha = input('Escolha a operação: \n[1] adição\n[2] subtração\n[3] multiplicação\n[4] divisão\n Escolha: ')
     operacao = int(escolha)
 
     if operacao == 1:
@@ -21,5 +21,10 @@ while True:
     elif operacao == 4:
         print(f' a divisão entre {primeiro_numero} e {segundo_numero} é {primeiro_numero / segundo_numero}')
     else: 
-        print('Saindo...')
+        print('Operação inválida...')
+        continue
+
+    sair = input('Deseja sair? [s/n]: ')
+
+    if sair == 's':
         break
